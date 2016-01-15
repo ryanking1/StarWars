@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Star Wars Character Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+    <form class="questions">
+
+    <div class="well">
+      <div class="radio">
+        <h3>Are you willing to do <em>anything</em> to become the most powerful person in the galaxy?</h3>
+        <label>
+          <input type="radio" name="forceSide" id="darkSide" value="option1" >
+          Yes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="forceSide" id="lightSide" value="option2" >
+          No
+        </label>
+      </div>
+    </div>
+
+      <div class="well">
+      <div class="radio">
+        <h3>Choose your favorite era of Star Wars:</h3>
+        <p><em>Choose wisely!<em><p/>
+        <label>
+          <input type="radio" name="eras" id="originals" value="option1" >
+          The Original Trilogy
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="eras" id="prequels" value="option2" disabled>
+          The Prequels
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="eras" id="sequels" value="option3" >
+          The (newest) Sequel Trilogy
+        </label>
+      </div>
+    </div>
+
+    <div class="well">
+      <div class="radio">
+        <h3>Personality type:</h3>
+        <label>
+          <input type="radio" name="personality" id="typeA" value="option1" >
+          Type A
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="personality" id="typeB" value="option2" >
+          Type B
+        </label>
+      </div>
+    </div>
+
+      <button type="submit" class="btn btn-warning">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>
