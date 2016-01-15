@@ -17,13 +17,13 @@
       <div class="radio">
         <h3>Are you willing to do <em>anything</em> to become the most powerful person in the galaxy?</h3>
         <label>
-          <input type="radio" name="forceSide" id="darkSide" value="option1" >
+          <input type="radio" name="forceSide" id="darkSide" value="1" >
           Yes
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="forceSide" id="lightSide" value="option2" >
+          <input type="radio" name="forceSide" id="lightSide" value="0" >
           No
         </label>
       </div>
@@ -34,7 +34,7 @@
         <h3>Choose your favorite era of Star Wars:</h3>
         <p><em>Choose wisely!<em><p/>
         <label>
-          <input type="radio" name="eras" id="originals" value="option1" >
+          <input type="radio" name="eras" id="originals" value="1" >
           The Original Trilogy
         </label>
       </div>
@@ -46,7 +46,7 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="eras" id="sequels" value="option3" >
+          <input type="radio" name="eras" id="sequels" value="0" >
           The (newest) Sequel Trilogy
         </label>
       </div>
@@ -56,13 +56,13 @@
       <div class="radio">
         <h3>Personality type:</h3>
         <label>
-          <input type="radio" name="personality" id="typeA" value="option1" >
+          <input type="radio" name="personality" id="typeA" value="1" >
           Type A
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="personality" id="typeB" value="option2" >
+          <input type="radio" name="personality" id="typeB" value="0" >
           Type B
         </label>
       </div>
@@ -70,6 +70,11 @@
 
       <button type="submit" class="btn btn-warning">Submit</button>
     </form>
+
+      <div id="result">
+        <p>Your ideal celebrity to date is <span id="celebrityName"></span>.</p>
+      </div>
+
     </div>
   </body>
 </html>
